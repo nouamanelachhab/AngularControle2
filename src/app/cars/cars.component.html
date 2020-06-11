@@ -1,0 +1,27 @@
+<div class="recommended-cars">
+    <div class="container">
+	<div class="row">
+	    <div class="col-md-12">
+		<div class="card">
+		    <div class="card-body">
+		        <h5> Liste des Voitures</h5>
+		    <div class="row py-2">
+		        <div class="col-md-4 vertical-box"  *ngFor="let item of cars" >
+		             <div class="card">
+                      <img class="card-img-top mh200-text" [src]="item.image" alt="Card image">
+                      <div class="card-body">
+                        <h5 class="card-text">Num d'immatriulation :</h5>
+                        <h4 class="card-title mw30-text">{{ item.n_immatriculation }}</h4>
+                    
+    
+   
+                        <span  class="btn btn-outline-danger" (click)="goToCarsDetail(item)">Details</span>
+  </div>
+</div>
+		         </div>
+		     
+		        
+		       
+		     </div>
+		    </div>
+		</div>
